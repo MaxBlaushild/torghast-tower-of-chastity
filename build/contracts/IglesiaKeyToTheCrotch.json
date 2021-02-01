@@ -1,0 +1,942 @@
+{
+  "contractName": "IglesiaKeyToTheCrotch",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "heartTumbler",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "agelessChallenge",
+          "type": "uint256"
+        }
+      ],
+      "name": "mindTumbler",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "spiritTumbler",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"heartTumbler\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"agelessChallenge\",\"type\":\"uint256\"}],\"name\":\"mindTumbler\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"spiritTumbler\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/blaushmild/projects/torghast-tower-of-chastity/contracts/IglesiaKeyToTheCrotch.sol\":\"IglesiaKeyToTheCrotch\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/blaushmild/projects/torghast-tower-of-chastity/contracts/IKey.sol\":{\"keccak256\":\"0xd23dfbdc627ad39ffb5ecfd182b77172e8fb3b0f6c019828d005c20f681e4cab\",\"urls\":[\"bzz-raw://2059927dace8b057af1cfbad1ce3c2fdf545b402417db2d18fa0d3a3ab60e823\",\"dweb:/ipfs/QmT9ZUjszaPhGk6Z4zocEw5WStX78xSMBWtFbMWZaoxr2S\"]},\"/home/blaushmild/projects/torghast-tower-of-chastity/contracts/IglesiaKeyToTheCrotch.sol\":{\"keccak256\":\"0x2562c0316f6bb0e3c35db9f25d75373ee5a2582a9818decb4d11c7ad74e14c1d\",\"urls\":[\"bzz-raw://01389616570ab332b2fc8efee8e4011ec2dd935e055485f8f32ce2b8477c239c\",\"dweb:/ipfs/QmcsDM9F391vw8vmvoVKFnDCXk5D4b2LJUZ3BRXFrRFUwv\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610144806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80631929796314610046578063a04b8bbb14610088578063b436a449146100d2575b600080fd5b6100726004803603602081101561005c57600080fd5b81019080803590602001909291905050506100f4565b6040518082815260200191505060405180910390f35b6100906100fe565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100da610106565b604051808215151515815260200191505060405180910390f35b6000809050919050565b600080905090565b60008090509056fea264697066735822122031e215bcaee6dd8e96d8874f463a08f66bd97991880bc333fedf58f2c41511bd64736f6c63430006020033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80631929796314610046578063a04b8bbb14610088578063b436a449146100d2575b600080fd5b6100726004803603602081101561005c57600080fd5b81019080803590602001909291905050506100f4565b6040518082815260200191505060405180910390f35b6100906100fe565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100da610106565b604051808215151515815260200191505060405180910390f35b6000809050919050565b600080905090565b60008090509056fea264697066735822122031e215bcaee6dd8e96d8874f463a08f66bd97991880bc333fedf58f2c41511bd64736f6c63430006020033",
+  "sourceMap": "47:626:2:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;47:626:2;;;;;;;",
+  "deployedSourceMap": "47:626:2:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;47:626:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;330:107;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;330:107:2;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;571:100;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;124:91;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;330:107;406:4;429:1;422:8;;330:107;;;:::o;571:100::-;628:7;662:1;647:17;;571:100;:::o;124:91::-;180:4;203:5;196:12;;124:91;:::o",
+  "source": "pragma solidity 0.6.2;\n\nimport \"./IKey.sol\";\n\n\ncontract IglesiaKeyToTheCrotch is IKey {\n\n    // The heart must be true.\n    function heartTumbler() external view override returns (bool) {\n        return false;\n    }\n\n    // The mind must be sharp as a knife. Return a number that satisfies\n    // the eternal prison's demands\n    function mindTumbler(uint agelessChallenge) external view override returns (uint) {\n        return 0;\n    }\n\n    // The spirit must be rich . . . . with money. Return a token address\n    // that the key will hold greater than 0 units of\n    function spiritTumbler() external view override returns (address) {\n        return address(0);\n    }\n}",
+  "sourcePath": "/home/blaushmild/projects/torghast-tower-of-chastity/contracts/IglesiaKeyToTheCrotch.sol",
+  "ast": {
+    "absolutePath": "/home/blaushmild/projects/torghast-tower-of-chastity/contracts/IglesiaKeyToTheCrotch.sol",
+    "exportedSymbols": {
+      "IglesiaKeyToTheCrotch": [
+        148
+      ]
+    },
+    "id": 149,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 112,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:22:2"
+      },
+      {
+        "absolutePath": "/home/blaushmild/projects/torghast-tower-of-chastity/contracts/IKey.sol",
+        "file": "./IKey.sol",
+        "id": 113,
+        "nodeType": "ImportDirective",
+        "scope": 149,
+        "sourceUnit": 111,
+        "src": "24:20:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 114,
+              "name": "IKey",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 110,
+              "src": "81:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IKey_$110",
+                "typeString": "contract IKey"
+              }
+            },
+            "id": 115,
+            "nodeType": "InheritanceSpecifier",
+            "src": "81:4:2"
+          }
+        ],
+        "contractDependencies": [
+          110
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 148,
+        "linearizedBaseContracts": [
+          148,
+          110
+        ],
+        "name": "IglesiaKeyToTheCrotch",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "baseFunctions": [
+              97
+            ],
+            "body": {
+              "id": 123,
+              "nodeType": "Block",
+              "src": "186:29:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "66616c7365",
+                    "id": 121,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "203:5:2",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "false"
+                  },
+                  "functionReturnParameters": 120,
+                  "id": 122,
+                  "nodeType": "Return",
+                  "src": "196:12:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "b436a449",
+            "id": 124,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "heartTumbler",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 117,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "162:8:2"
+            },
+            "parameters": {
+              "id": 116,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "145:2:2"
+            },
+            "returnParameters": {
+              "id": 120,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 119,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 124,
+                  "src": "180:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 118,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "180:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "179:6:2"
+            },
+            "scope": 148,
+            "src": "124:91:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "baseFunctions": [
+              104
+            ],
+            "body": {
+              "id": 134,
+              "nodeType": "Block",
+              "src": "412:25:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "30",
+                    "id": 132,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "429:1:2",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_0_by_1",
+                      "typeString": "int_const 0"
+                    },
+                    "value": "0"
+                  },
+                  "functionReturnParameters": 131,
+                  "id": 133,
+                  "nodeType": "Return",
+                  "src": "422:8:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "19297963",
+            "id": 135,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mindTumbler",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 128,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "388:8:2"
+            },
+            "parameters": {
+              "id": 127,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 126,
+                  "name": "agelessChallenge",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 135,
+                  "src": "351:21:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 125,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "351:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "350:23:2"
+            },
+            "returnParameters": {
+              "id": 131,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 130,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 135,
+                  "src": "406:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 129,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "406:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "405:6:2"
+            },
+            "scope": 148,
+            "src": "330:107:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "baseFunctions": [
+              109
+            ],
+            "body": {
+              "id": 146,
+              "nodeType": "Block",
+              "src": "637:34:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "30",
+                        "id": 143,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "662:1:2",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        }
+                      ],
+                      "id": 142,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "654:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_address_$",
+                        "typeString": "type(address)"
+                      },
+                      "typeName": {
+                        "id": 141,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "654:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": null,
+                          "typeString": null
+                        }
+                      }
+                    },
+                    "id": 144,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "654:10:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "functionReturnParameters": 140,
+                  "id": 145,
+                  "nodeType": "Return",
+                  "src": "647:17:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "a04b8bbb",
+            "id": 147,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "spiritTumbler",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 137,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "610:8:2"
+            },
+            "parameters": {
+              "id": 136,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "593:2:2"
+            },
+            "returnParameters": {
+              "id": 140,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 139,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 147,
+                  "src": "628:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 138,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "628:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "627:9:2"
+            },
+            "scope": 148,
+            "src": "571:100:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 149,
+        "src": "47:626:2"
+      }
+    ],
+    "src": "0:673:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/blaushmild/projects/torghast-tower-of-chastity/contracts/IglesiaKeyToTheCrotch.sol",
+    "exportedSymbols": {
+      "IglesiaKeyToTheCrotch": [
+        148
+      ]
+    },
+    "id": 149,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 112,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:22:2"
+      },
+      {
+        "absolutePath": "/home/blaushmild/projects/torghast-tower-of-chastity/contracts/IKey.sol",
+        "file": "./IKey.sol",
+        "id": 113,
+        "nodeType": "ImportDirective",
+        "scope": 149,
+        "sourceUnit": 111,
+        "src": "24:20:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 114,
+              "name": "IKey",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 110,
+              "src": "81:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IKey_$110",
+                "typeString": "contract IKey"
+              }
+            },
+            "id": 115,
+            "nodeType": "InheritanceSpecifier",
+            "src": "81:4:2"
+          }
+        ],
+        "contractDependencies": [
+          110
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 148,
+        "linearizedBaseContracts": [
+          148,
+          110
+        ],
+        "name": "IglesiaKeyToTheCrotch",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "baseFunctions": [
+              97
+            ],
+            "body": {
+              "id": 123,
+              "nodeType": "Block",
+              "src": "186:29:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "66616c7365",
+                    "id": 121,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "203:5:2",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "false"
+                  },
+                  "functionReturnParameters": 120,
+                  "id": 122,
+                  "nodeType": "Return",
+                  "src": "196:12:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "b436a449",
+            "id": 124,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "heartTumbler",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 117,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "162:8:2"
+            },
+            "parameters": {
+              "id": 116,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "145:2:2"
+            },
+            "returnParameters": {
+              "id": 120,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 119,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 124,
+                  "src": "180:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 118,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "180:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "179:6:2"
+            },
+            "scope": 148,
+            "src": "124:91:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "baseFunctions": [
+              104
+            ],
+            "body": {
+              "id": 134,
+              "nodeType": "Block",
+              "src": "412:25:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "30",
+                    "id": 132,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "429:1:2",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_0_by_1",
+                      "typeString": "int_const 0"
+                    },
+                    "value": "0"
+                  },
+                  "functionReturnParameters": 131,
+                  "id": 133,
+                  "nodeType": "Return",
+                  "src": "422:8:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "19297963",
+            "id": 135,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mindTumbler",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 128,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "388:8:2"
+            },
+            "parameters": {
+              "id": 127,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 126,
+                  "name": "agelessChallenge",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 135,
+                  "src": "351:21:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 125,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "351:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "350:23:2"
+            },
+            "returnParameters": {
+              "id": 131,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 130,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 135,
+                  "src": "406:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 129,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "406:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "405:6:2"
+            },
+            "scope": 148,
+            "src": "330:107:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "baseFunctions": [
+              109
+            ],
+            "body": {
+              "id": 146,
+              "nodeType": "Block",
+              "src": "637:34:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "30",
+                        "id": 143,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "662:1:2",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        }
+                      ],
+                      "id": 142,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "654:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_address_$",
+                        "typeString": "type(address)"
+                      },
+                      "typeName": {
+                        "id": 141,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "654:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": null,
+                          "typeString": null
+                        }
+                      }
+                    },
+                    "id": 144,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "654:10:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "functionReturnParameters": 140,
+                  "id": 145,
+                  "nodeType": "Return",
+                  "src": "647:17:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "a04b8bbb",
+            "id": 147,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "spiritTumbler",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 137,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "610:8:2"
+            },
+            "parameters": {
+              "id": 136,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "593:2:2"
+            },
+            "returnParameters": {
+              "id": 140,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 139,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 147,
+                  "src": "628:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 138,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "628:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "627:9:2"
+            },
+            "scope": 148,
+            "src": "571:100:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 149,
+        "src": "47:626:2"
+      }
+    ],
+    "src": "0:673:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.2+commit.bacdbe57.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.1",
+  "updatedAt": "2021-02-01T00:03:14.218Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
