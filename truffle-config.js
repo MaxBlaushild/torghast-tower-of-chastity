@@ -18,7 +18,7 @@
  *
  */
 
-// const HDWalletProvider = require('@truffle/hdwallet-provider');
+const HDWalletProvider = require('@truffle/hdwallet-provider');
 // const infuraKey = "fj4jll3k.....";
 //
 // const fs = require('fs');
@@ -64,9 +64,9 @@ module.exports = {
     mainnet: {
       provider: () => new HDWalletProvider(mnemonic, `https://mainnet.infura.io/v3/7999a4b8464a476f9989a257b5c21f88`),
       network_id: 1,
-      gas: 5500000,
       from: address,
       confirmations: 1,
+      gasPrice: 150000000000,
       timeoutBlocks: 200,
       skipDryRun: true
     },

@@ -28,6 +28,6 @@ contract WizardBoner is ERC721, Ownable {
   }
 
   function contractURI() public pure returns (string memory) {
-    return "https://ipfs.io/ipfs/Qmb8DKgeCwxQs2ieQNWSVNjMurrdUqPduRwNRaxoedctGz";
+    return "https://ipfs.io/ipfs/Qmbi2fGXqN8vAQyjoXnLVwE5VuyqB5R3bYDisEbbBcZwxD";
   }
 }

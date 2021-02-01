@@ -8,6 +8,7 @@ But all hope is not lost, intrepid adventurer. You hold with you (Enrique) Igles
 
 Your job is to use all of your mastery and skills to repair the key so that it may unlock the magical **heart**, **mind** and **spirit** tumblers that keep all of our land's boners behind lock and key.
 
+More specifically, you will need to finish writing the smart contract `contract/IglesiasKeyToTheCrotch` and deploy it to unlock **YOUR OWN PERSONAL LIMITED EDITION FIRST OF ITS CLASS WIZARD BONER!!!!!**
 
 ## Installation
 
